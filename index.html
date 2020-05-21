@@ -2,23 +2,38 @@
 <html>
 <head>
 	<title>PIZZA</title>
-	<link rel="stylesheet" type="text/css" href="bootsrap.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<div class="container">
-		<h1>PIZZA</h1>
-		<div class="row">
-			<div class="col-md-3">
-				
-				
-			</div>>
-			
+		<div class="row1">
+			<h1>PIZZA</h1>
 		</div>
-	
+		<div class="row">
+			<div class="col-md-7"></div>
+			<form>
+				<div class="form-group">
+					<label>Pizza Sizes</label>
+					<select class="form-control">
+						<option label="-Select pizza size-"></option>
+						<option value="large">Large</option>
+						<option value="medium">Medium</option>
+						<option value="small">Small</option>
+					</select>
+				</div>
+				<div class="form-group display-none">
+					<label><input type="checkbox" name="crust" value="crispy">&nbsp;&nbsp;Crispy</label>
+					<label><input type="checkbox" name="crust" value="stuffed">&nbsp;&nbsp;Stuffed</label>
+					<label><input type="checkbox" name="crust" value="glutten">&nbsp;&nbsp;Glutten-Free</label>
+				</div>
+			</form>
+			<div class="col-md-3"></div>
+			<div class="col-md-2"></div>
+		</div>
 	</div>
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
 </body>
 </html>
