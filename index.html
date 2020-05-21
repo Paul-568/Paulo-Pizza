@@ -22,49 +22,84 @@
 						<option value="small">Small---Ksh500</option>
 					</select>
 				</div>
-				<div class="form-group display-none">
-					<label><input type="checkbox" name="crust" value="crispy">&nbsp;&nbsp;Crispy---Ksh200</label>
-					<label><input type="checkbox" name="crust" value="stuffed">&nbsp;&nbsp;Stuffed---Ksh120</label>
-					<label><input type="checkbox" name="crust" value="glutten">&nbsp;&nbsp;Glutten-Free--Ksh150</label>
-				</div>
+				<div class="form-group">
+					<label>Select Crust</label>
+					<select class="form-control">
+						<option label="-Select favourite Crust-"></option>
+						<option value="crispy">Crispy---Ksh200</option>
+						<option value="stuffed">Stuffed---Ksh200</option>
+						<option value="gluttenfree">Glutten-Free---Ksh200</option>
+					</select>
 				<div class="form-group toppings display-none">
 					<label for="Toppings">Select your favourite Toppings at ksh 80/=</label>
 					<div class="custom-control custom-chekbox custom-control-inline">
-						<input type="checkbox" name="toppings" id="peperoni" class="custom-control-inline" value="peperoni">
-						<label class="custom-control-inline" for="peperoni">Peperoni</label>
+						<input type="checkbox" name="toppings" id="peperoni" class="custom-control-inline" value="mushroom">
+						<label class="custom-control-inline" for="mushroom">Mushroom</label>
 					</div>
 					<div class="custom-control custom-chekbox custom-control-inline">
-						<input type="checkbox" name="toppings" id="supreme" class="custom-control-inline" value="supreme">
-						<label class="custom-control-inline" for="supreme">Supreme</label>
+						<input type="checkbox" name="toppings" id="pineapple" class="custom-control-inline" value="pineapple">
+						<label class="custom-control-inline" for="supreme">Pineapple</label>
 					</div>
 					<div class="custom-control custom-chekbox custom-control-inline">
-						<input type="checkbox" name="toppings" id="hawaiin" class="custom-control-inline" value="hawaiin">
-						<label class="custom-control-inline" for="hawaiin">Hawaiin</label>
+						<input type="checkbox" name="toppings" id="onions" class="custom-control-inline" value="onions">
+						<label class="custom-control-inline" for="hawaiin">Onions & Tomatoes</label>
 					</div>
 						<div class="custom-control custom-chekbox custom-control-inline">
-						<input type="checkbox" name="toppings" id="bbq" class="custom-control-inline" value="bbq">
-						<label class="custom-control-inline" for="bbq">BBQ Meat Lovers</label>
+						<input type="checkbox" name="toppings" id="peperoni" class="custom-control-inline" value="peperoni">
+						<label class="custom-control-inline" for="peperoni">Peperoni</label>
 					</div>
 					<div class="custom-control custom-chekbox custom-control-inline">
 						<input type="checkbox" name="toppings" id="garlic" class="custom-control-inline" value="garlic">
 						<label class="custom-control-inline" for="garlic">Garlic Butter Prawn</label>
 					</div>
-					<div class="form-group">
-					<label>Delivery</label>
-					<select class="form-control">
-						<option label="-Select Delivery-"></option>
-						<option value="yes">Yes</option>
-						<option value="no">No</option>
-					</select>
-					<div class="form-group yes display-none">
-					<label>Delivery Cost</label>
-					<label><input type="number" name="yes" value="cost">&nbsp;&nbsp;</label>
-				</div>
-					<button class="btn btn-warning "type="submit">Place Order</button>
-				</div>
+				<button type="btn btn-sm btn-alert">Order</button>
+
 			</form>
-			<div class="col-md-3"></div>
-			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				<p>Your order has been recieved,you will recieve your order in 30 min.</p>
+				<p>Goods once sold cannot be returnable</p>
+			</div>
+			<div class="order">
+				<h2>Your order is;</h2>
+				<div id="your-orders">
+					<table class="table table-sm pizzatable">
+						<thead>
+							<tr>
+								<th scope="col">Size</th>
+								<th scope="col">Crust</th>
+								<th scope="col">Topping</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<pbody id="ordersmade">
+							<tr>
+							<td id="pizzasize"></td>
+							<td id="pizzacrust"></td>
+							<td id="pizzatopping"></td>
+							<td id="totals"></td>
+							</tr>
+						</pbody>
+					</table>
+					<p id="pizzatotal"></p>
+					<p id="totalbill"></p>
+					<p id="addedprice">Delivery cost will be Ksh 200</p>
+					<p id="finalmessage"></p>
+				</div>
+				<div>
+				<button class="btn btn-warning">Add Pizza</button>
+				<button class="btn btn-alert">Checkout</button>
+				<button class="btn btn-success">Delivery</button>
+			</div>
+			<div class="delivery">
+				<div class="form-group">
+					<input type="text" id="name" placeholder="Name" class="form-control">
+					<input type="text" id="location" class="form-control" placeholder="Location">
+					<button btn btn-alert id="fina-order">Place order</button>
+					
+				</div>
+				
+			</div>
+
 		</div>
 	</div>
 
