@@ -15,8 +15,8 @@
 			<form>
 				<div class="form-group">
 					<label>Pizza Sizes</label>
-					<select class="form-control">
-						<option label="-Select pizza size-"></option>
+					<select class="form-control" id="size">
+						<option selected value="0">Select pizza size</option>
 						<option value="large">Large---Ksh1200</option>
 						<option value="medium">Medium---Ksh800</option>
 						<option value="small">Small---Ksh500</option>
@@ -24,8 +24,8 @@
 				</div>
 				<div class="form-group">
 					<label>Select Crust</label>
-					<select class="form-control">
-						<option label="-Select favourite Crust-"></option>
+					<select class="form-control" id="crust">
+						<option selected value="0">Select favourite Crust</option>
 						<option value="crispy">Crispy---Ksh200</option>
 						<option value="stuffed">Stuffed---Ksh200</option>
 						<option value="gluttenfree">Glutten-Free---Ksh200</option>
@@ -58,6 +58,7 @@
 			</div>
 			</form>
 			<div class="col-md-3">
+				<div id="reciept"
 				<p>Your order has been recieved,you will recieve your order in 30 min.</p>
 				<p>Goods once sold cannot be returnable</p>
 			</div>
@@ -92,13 +93,14 @@
 				<button class="btn btn-dark">Checkout</button>
 				<button class="btn btn-success">Delivery</button>
 			</div>
-			<div class="delivery">
+			<div class="delivery display-none">
 				<div class="form-group">
 					<input type="text" id="name" placeholder="Name" class="form-control">
 					<input type="text" id="location" class="form-control" placeholder="Location">
-					<button btn btn-alert id="fina-order">Place order</button>
-					
+					<input type="number" name="phone number" id="number" placeholder="Phone number">
 				</div>
+
+					<button btn btn-alert id="fina-order">Place order</button>
 				
 			</div>
 
