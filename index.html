@@ -17,15 +17,50 @@
 					<label>Pizza Sizes</label>
 					<select class="form-control">
 						<option label="-Select pizza size-"></option>
-						<option value="large">Large</option>
-						<option value="medium">Medium</option>
-						<option value="small">Small</option>
+						<option value="large">Large---Ksh1200</option>
+						<option value="medium">Medium---Ksh800</option>
+						<option value="small">Small---Ksh500</option>
 					</select>
 				</div>
 				<div class="form-group display-none">
-					<label><input type="checkbox" name="crust" value="crispy">&nbsp;&nbsp;Crispy</label>
-					<label><input type="checkbox" name="crust" value="stuffed">&nbsp;&nbsp;Stuffed</label>
-					<label><input type="checkbox" name="crust" value="glutten">&nbsp;&nbsp;Glutten-Free</label>
+					<label><input type="checkbox" name="crust" value="crispy">&nbsp;&nbsp;Crispy---Ksh200</label>
+					<label><input type="checkbox" name="crust" value="stuffed">&nbsp;&nbsp;Stuffed---Ksh120</label>
+					<label><input type="checkbox" name="crust" value="glutten">&nbsp;&nbsp;Glutten-Free--Ksh150</label>
+				</div>
+				<div class="form-group toppings display-none">
+					<label for="Toppings">Select your favourite Toppings at ksh 80/=</label>
+					<div class="custom-control custom-chekbox custom-control-inline">
+						<input type="checkbox" name="toppings" id="peperoni" class="custom-control-inline" value="peperoni">
+						<label class="custom-control-inline" for="peperoni">Peperoni</label>
+					</div>
+					<div class="custom-control custom-chekbox custom-control-inline">
+						<input type="checkbox" name="toppings" id="supreme" class="custom-control-inline" value="supreme">
+						<label class="custom-control-inline" for="supreme">Supreme</label>
+					</div>
+					<div class="custom-control custom-chekbox custom-control-inline">
+						<input type="checkbox" name="toppings" id="hawaiin" class="custom-control-inline" value="hawaiin">
+						<label class="custom-control-inline" for="hawaiin">Hawaiin</label>
+					</div>
+						<div class="custom-control custom-chekbox custom-control-inline">
+						<input type="checkbox" name="toppings" id="bbq" class="custom-control-inline" value="bbq">
+						<label class="custom-control-inline" for="bbq">BBQ Meat Lovers</label>
+					</div>
+					<div class="custom-control custom-chekbox custom-control-inline">
+						<input type="checkbox" name="toppings" id="garlic" class="custom-control-inline" value="garlic">
+						<label class="custom-control-inline" for="garlic">Garlic Butter Prawn</label>
+					</div>
+					<div class="form-group">
+					<label>Delivery</label>
+					<select class="form-control">
+						<option label="-Select Delivery-"></option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+					<div class="form-group yes display-none">
+					<label>Delivery Cost</label>
+					<label><input type="number" name="yes" value="cost">&nbsp;&nbsp;</label>
+				</div>
+					<button class="btn btn-warning "type="submit">Place Order</button>
 				</div>
 			</form>
 			<div class="col-md-3"></div>
