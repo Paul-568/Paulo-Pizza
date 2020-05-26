@@ -11,7 +11,7 @@ This a website that that enable users to order their favourite pizza online and 
 Paul Tuleto
 
 ### Live Page
-https://Paul-568.github.io/Pizza/
+https://Paul-568.github.io/Paulo-Pizza/
 
 ## Tecnologies Used
 
@@ -23,11 +23,11 @@ Jquerry
 
 Bootstrap
 
-##Installation / Setup instruction
+## Installation / Setup instruction
 
 Open Terminal {Ctrl+Alt+T}
 
-git clone https://github.com/Paul-568/Pizza.git
+git clone https://github.com/Paul-568/Paulo-Pizza.git
 
 cd Pizza
 
